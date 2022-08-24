@@ -1,0 +1,76 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+html, html a {
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased !important;
+}
+    * {
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Lato', sans-serif;
+
+}
+@media screen and (max-width: 600px) {
+    .hide-in-mobile {
+        display: none;
+        opacity:0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .show-in-mobile {
+        display: contents;
+        opacity: 100;
+    }
+@media screen and (min-width: 600px) {
+    .hide-in-desktop {
+        display: none;
+        opacity: 0;
+    }
+@media screen and (min-width: 600px) {
+    .show-in-desktop {
+        display: contents;
+        opacity: 100;
+    }
+
+.button-size-1{
+    max-height:5em;
+        max-width:5em;
+}
+    .grid {
+        display: grid;
+    }
+
+    .flex {
+        display: flex;
+    }
+    /* Genres Styling */
+
+    .GeneralGenreImgSet {
+        float: left;
+        width: 20em;
+        height: 25em;
+        padding: 2em;
+        opacity: 0.4;
+        object-fit: cover;
+    }
+
+        .GeneralGenreImgSet:hover {
+            opacity: 1;
+            transition-duration: 1s;
+        }
+
+    .adjust-img-position-left {
+        object-position: left;
+    }
+
+    .adjust-img-position-80 {
+        object-position: 80%;
+    }
+
+    .adjust-img-position-right {
+        object-position: right;
+    }

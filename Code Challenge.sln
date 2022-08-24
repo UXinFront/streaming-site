@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7543F76F-79EE-4525-ABAD-DE207D3987FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "html", "html", "{F2EEA268-D1B9-46CD-869E-78EA264F09A8}"
+	ProjectSection(SolutionItems) = preProject
+		BrowsePage.html = BrowsePage.html
+		ComedyCategory.html = ComedyCategory.html
+		CrimeCategory.html = CrimeCategory.html
+		DocumentaryCategory.html = DocumentaryCategory.html
+		DramaCategory.html = DramaCategory.html
+		FrontPage.html = FrontPage.html
+		HorrorCategory.html = HorrorCategory.html
+		LoginPage.html = LoginPage.html
+		ProfilePage.html = ProfilePage.html
+		RomanceCategory.html = RomanceCategory.html
+		SearchResultPage.html = SearchResultPage.html
+		StyleSheet2.css = StyleSheet2.css
+		ThrillerCategory.html = ThrillerCategory.html
+		WarCategory.html = WarCategory.html
+		WatchlistPage.html = WatchlistPage.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{94D11A2F-768E-403E-8A5B-44036BB0BAA2}"
+	ProjectSection(SolutionItems) = preProject
+		StyleSheet2.css = StyleSheet2.css
+		Style.css = Style.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{A07358A0-0DBE-4E85-836D-35C9964D9B69}"
+	ProjectSection(SolutionItems) = preProject
+		Script1.js = Script1.js
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F2EEA268-D1B9-46CD-869E-78EA264F09A8} = {7543F76F-79EE-4525-ABAD-DE207D3987FD}
+		{94D11A2F-768E-403E-8A5B-44036BB0BAA2} = {7543F76F-79EE-4525-ABAD-DE207D3987FD}
+		{A07358A0-0DBE-4E85-836D-35C9964D9B69} = {7543F76F-79EE-4525-ABAD-DE207D3987FD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {367034B7-365F-4F9C-A0B7-99C874368E2E}
+	EndGlobalSection
+EndGlobal

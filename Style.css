@@ -1,0 +1,373 @@
+﻿/* Text-smoothing for all website text */
+html,
+html a {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased !important;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.background-animation {
+    height: 3840px;
+    width: 2160px;
+
+    background-image: url("abstract-background.gif");
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.WatchListButton {
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    border-style: solid;
+    border-color: rgb(72, 61, 139);
+    text-decoration: none;
+    background-color: rgb(72, 61, 139);
+    border-radius: 3px;
+    color: white;
+}
+
+/* Icon for hamburger-menu (mobile/tablet)
+https://developers.google.com/fonts/docs/material_icons */
+@media screen and (max-width: 1200px) {
+    .material-icons.md-light {
+        position: block;
+        color: rgba(255, 255, 255, 1);
+        font-size: 46px;
+        height: 60px;
+        width: 98%;
+        right: 20px;
+        object-position: right;
+        text-align: right;
+        justify-items: right;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .material-icons.md-light {
+        color: rgba(255, 255, 255, 1);
+        font-size: 48px;
+        opacity: 0;
+        display: none;
+    }
+}
+
+/* Home Icon */
+.home-icon-container {
+    column-count: 2;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 40px;
+    z-index: 100;
+}
+
+.home-icon-container img {
+    filter: invert(100);
+    width: 60px;
+    height: 60px;
+    z-index: 100;
+
+}
+
+/* If screen size is 600px or less, hide */
+@media screen and (max-width: 1200px) {
+    .WatchListButton {
+        opacity: 0;
+        display: none;
+    }
+
+    /* Hiding desktop navigation for mobile users */
+    .navigation {
+        opacity: 0;
+    }
+
+    .navigation img {
+        opacity: 1;
+
+        border-style: solid;
+    }
+}
+
+/* Navigation Styling */
+.navigation {
+    display: block;
+    color: rgba(255, 255, 255, 1);
+    /* height: 40px; */
+    overflow: hidden;
+    background-color: #000000;
+    border-width: 2px, 2px, 2px, 2px;
+    border-color: white;
+    margin-bottom: 60px;
+}
+
+.navigation input {
+    margin-top: 20px;
+}
+
+header {
+    height: 100px;
+    font-size: 22px;
+    text-align: right;
+}
+
+header a {
+    margin: 10px;
+}
+
+header a:hover {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+    transition-duration: .5s;
+}
+
+nav p {
+    color: white;
+}
+
+.vert-divider {
+    color: white;
+    user-select: none;
+}
+
+.active-menu-item {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Interaction styling for search bar */
+.navigation a.active {
+    background-color: #2196F3;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* Navigation Styling for Mobile */
+@media screen and (max-width: 600px) {
+
+    .navigation a,
+    .topnav input[type=text] {
+        float: none;
+        display: block;
+        top: 0;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+
+    /* Styling for search bar */
+    .topnav input[type=text] {
+        border: 1px solid #ccc;
+    }
+}
+
+/* Navigation search bar */
+.navigation input[type=text] {
+    float: right;
+    padding: 6px;
+    position: absolute;
+    top: 0;
+    left: 45%;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+/* Headline of the section for each page */
+.page-headline {
+    display: block;
+    margin: auto;
+    height: 50px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(72, 61, 139, 1);
+    border-bottom-width: 10px;
+    font-size: 36px;
+}
+
+/* Container for categories */
+.categories-container {
+    width: 100%;
+    margin: 20px 20px auto 20px;
+    align-items: center;
+}
+
+/* individual category frames */
+.container {
+    float: left;
+    display: block;
+    height: 500px;
+    width: 400px;
+    margin: 0 20px 100px 40px;
+    -webkit-animation: slideIn 1s forwards;
+    -moz-animation: slideIn 1s forwards;
+    animation: slideIn 1s forwards;
+}
+
+/* styling of images in frames */
+.container a {
+    height: 350px;
+    width: 400px;
+    filter: grayscale(50%);
+    margin: 0px auto 0px auto;
+    overflow: hidden;
+}
+
+.container a img {
+    height: 350px;
+    width: 400px;
+    filter: grayscale(50%);
+    object-fit: cover;
+    margin: 0px auto 0px auto;
+}
+
+/* hover effect for mouseover - coloration + brightness */
+@media screen and (min-width:1000px) {
+    .container a img:hover {
+        filter: grayscale(0%);
+        filter: brightness(120%);
+        filter: saturate(200%);
+        transition-duration: .3s;
+        width: 410px;
+        height: 360px;
+    }
+}
+
+/* special addition of left-align for horror category image */
+.container:nth-child(9) img {
+    object-position: left;
+}
+
+.container h2 {
+    margin: px 0 0px 0px;
+    border-style: solid;
+    border-width: 2px 0 2px 0;
+    border-color: rgb(141, 141, 141)
+}
+
+.container h3 {
+    display: block;
+    font-size: 1rem;
+    top: 0px;
+
+}
+
+/* special case of image being greyscale - need change of brightness on hover (documentary category) */
+div.container:nth-child(8)>a:nth-child(2)>img:nth-child(1) {
+    filter: contrast(150%);
+    border-color: rgba(141, 141, 141, .5);
+    border-style: solid;
+    border-width: 1px;
+}
+
+div.container:nth-child(8)>a:nth-child(2)>img:nth-child(1):hover {
+    opacity: 100%;
+    filter: brightness(120%);
+}
+
+@-webkit-keyframes slideIn {
+    0% {
+        transform: translateX(-900px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@-moz-keyframes slideIn {
+    0% {
+        transform: translateX(-900px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-900px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+/* for 3k+ resolutions */
+@media screen and (min-width:3000px) {
+    .categories-container {
+        width: 50%;
+        margin: auto;
+        border-style: solid;
+        align-items: center;
+        align-content: center;
+    }
+
+    .container {
+        height: 500px;
+        width: 600px;
+        margin: 20px 10px 20px 30px;
+        align-items: center;
+    }
+
+    .container img {
+        height: 450px;
+        width: 600px;
+        object-fit: cover;
+        align-content: center;
+    }
+
+    .container h2 {
+        margin: 0 0 0px 0;
+        border-width: 2px 0 2px 0;
+        border-color: rgb(141, 141, 141)
+    }
+
+    .container h3 {
+        margin: 0 0 0px 0;
+        font-size: 1rem;
+    }
+}
+
+
+/* hover effect for mouseover */
+@media screen and (min-width:1000px) {
+    .container a img:hover {
+        opacity: 1;
+        box-shadow: 0px 0px 30px 0px rgb(254, 236, 146);
+        transition-duration: 0.2s;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .container {
+        height: 200px;
+        width: 200px;
+    }
+
+    .container a {
+        width: 200px;
+        max-height: 180px;
+        overflow: hidden;
+    }
+
+    .container a img {
+        opacity: 1;
+        filter: grayscale(0);
+        height: 200px;
+        width: 200px;
+    }
+}
+
+b
